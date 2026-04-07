@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeYatra — Build Real Skills. Land Real Jobs.</title>
+  <meta name="description" content="Stop memorizing theory. Start building real MERN stack projects. Become job-ready in 90 days with hands-on mentorship and career support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════ NAV ══════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="CodeYatra" class="logo-img" />
+      </a>
+      <div class="nav-center" id="navLinks">
+        <a href="#why" class="nav-link">Why Us</a>
+        <a href="#roadmap" class="nav-link">Roadmap</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#practice" class="nav-link">Try It</a>
+        <a href="#outcomes" class="nav-link">Outcomes</a>
+      </div>
+      <div class="nav-right">
+        <a href="#cta" class="btn btn-secondary btn-sm">Join Free</a>
+        <a href="#cta" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="nav-burger" id="navBurger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile-panel" id="navMobile">
+      <a href="#why" class="nav-link">Why Us</a>
+      <a href="#roadmap" class="nav-link">Roadmap</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#practice" class="nav-link">Try It</a>
+      <a href="#outcomes" class="nav-link">Outcomes</a>
+      <a href="#cta" class="btn btn-primary">Apply Now</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-wrap">
+      <div class="hero-copy">
+        <div class="hero-tag" data-reveal>
+          <span class="tag-dot"></span>
+          Now Accepting Applications
+        </div>
+
+        <h1 class="hero-h1" data-reveal>
+          Your College Didn't<br/>Prepare You.<br/>
+          <span class="h1-highlight">We Will.</span>
+        </h1>
+
+        <p class="hero-sub" data-reveal>
+          90 days of real-world MERN stack projects, 1-on-1 mentorship, and career coaching. Go from student to employed developer — with a portfolio that proves it.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#cta" class="btn btn-primary btn-lg">
+            Start Your Journey
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#roadmap" class="btn btn-outline btn-lg">Explore Roadmap</a>
+        </div>
+
+        <div class="hero-stats" data-reveal>
+          <div class="hero-stat">
+            <span class="stat-num">240+</span>
+            <span class="stat-label">Students Hired</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">91%</span>
+            <span class="stat-label">Placement Rate</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">90</span>
+            <span class="stat-label">Days to Job-Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="hero-terminal">
+          <div class="term-bar">
+            <span class="term-dot term-r"></span>
+            <span class="term-dot term-y"></span>
+            <span class="term-dot term-g"></span>
+            <span class="term-label">career.sh</span>
+          </div>
+          <div class="term-body" id="heroTerminal"></div>
+        </div>
+        <div class="float-card fc-top" data-float>
+          <div class="fc-icon fc-icon-star">★</div>
+          <div>
+            <p class="fc-title">Project Shipped</p>
+            <p class="fc-sub">E-commerce App</p>
+          </div>
+          <span class="fc-badge">+250 XP</span>
+        </div>
+        <div class="float-card fc-bottom" data-float>
+          <div class="fc-icon fc-icon-check">✓</div>
+          <div>
+            <p class="fc-title">Offer Received</p>
+            <p class="fc-sub">₹8.5 LPA</p>
+          </div>
+          <span class="fc-badge fc-badge-green">Hired!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ WHY US / PAIN SECTION ══════════════════════ -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">The Hard Truth</span>
+        <h2 class="section-title">You're Not Failing.<br/>The System Is.</h2>
+      </div>
+
+      <div class="why-cards">
+        <div class="why-card" data-reveal data-delay="0">
+          <div class="wc-number">01</div>
+          <div class="wc-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="10" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 17h14M13 22h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>100% Theory, 0% Reality</h3>
+          <p>Four years of algorithms and viva exams. None of it prepares you for an actual job interview in 2026.</p>
+          <div class="wc-metric">
+            <div class="wc-bar-track"><div class="wc-bar-fill" data-width="8"></div></div>
+            <span class="wc-bar-label">Only 8% of college curriculum is job-relevant</span>
+          </div>
+        </div>
+
+        <div class="why-card why-card-accent" data-reveal data-delay="0.1">
+          <div class="wc-number">02</div>
+          <div class="wc-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 13v7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Zero Real Projects</h3>
+          <p>Employers want live, deployed applications. Not CRUD apps built in 2010-era PHP.</p>
+          <div class="wc-stat">
+            <span class="wc-stat-num" data-count="73">0</span><span class="wc-stat-pct">%</span>
+            <span class="wc-stat-desc">of CS grads can't pass a basic coding screen</span>
+          </div>
+        </div>
+
+        <div class="why-card" data-reveal data-delay="0.2">
+          <div class="wc-number">03</div>
+          <div class="wc-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 6l2.5 5 5.5.8-4 3.9.9 5.5L20 18.5l-4.9 2.7.9-5.5L12 11.8l5.5-.8L20 6z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 32c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>No Career Guidance</h3>
+          <p>Nobody teaches portfolio building, system design interviews, or salary negotiation.</p>
+          <div class="wc-tags">
+            <span>Resume?</span><span>GitHub?</span><span>LinkedIn?</span><span>Interview prep?</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison Block -->
+      <div class="compare-block" data-reveal>
+        <div class="compare-left">
+          <span class="compare-label">The CodeYatra Approach</span>
+          <h3>90 days. Real projects. Real jobs.</h3>
+          <p>We built the curriculum college never gave you. Project-first, mentor-led, career-focused.</p>
+          <a href="#roadmap" class="btn btn-primary">See How It Works</a>
+        </div>
+        <div class="compare-table">
+          <div class="compare-col">
+            <div class="compare-head compare-bad">College</div>
+            <div class="compare-item bad">
+              <svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Theory-first
+            </div>
+            <div class="compare-item bad">
+              <svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Outdated curriculum
+            </div>
+            <div class="compare-item bad">
+              <svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Zero job guidance
+            </div>
+            <div class="compare-item bad">
+              <svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+              4 years, $$$$
+            </div>
+          </div>
+          <div class="compare-vs">VS</div>
+          <div class="compare-col">
+            <div class="compare-head compare-good">CodeYatra</div>
+            <div class="compare-item good">
+              <svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Project-first
+            </div>
+            <div class="compare-item good">
+              <svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Industry standard (2026)
+            </div>
+            <div class="compare-item good">
+              <svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Career mentorship
+            </div>
+            <div class="compare-item good">
+              <svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              90 days, affordable
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ ROADMAP ══════════════════════ -->
+  <section class="roadmap-section" id="roadmap">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Your 90-Day Journey</span>
+        <h2 class="section-title">From Zero to<br/><span class="title-highlight">Job-Ready</span></h2>
+        <p class="section-desc">Click any milestone to see what you'll learn at each stage.</p>
+      </div>
+      <div class="roadmap-wrap" id="roadmapWrap">
+        <canvas class="roadmap-canvas" id="roadmapCanvas"></canvas>
+        <div class="roadmap-nodes" id="roadmapNodes"></div>
+      </div>
+      <div class="roadmap-detail" id="roadmapDetail">
+        <div class="rd-inner" id="rdInner"></div>
+      </div>
+      <div class="xp-bar-wrap" data-reveal>
+        <div class="xp-label">
+          <span>Your Progress</span>
+          <span class="xp-level" id="xpLevel">Level 1 — Beginner</span>
+        </div>
+        <div class="xp-track">
+          <div class="xp-fill" id="xpFill" style="width:0%"></div>
+        </div>
+        <div class="xp-nodes">
+          <span>Start</span>
+          <span>Phase 1</span>
+          <span>Phase 2</span>
+          <span>Hired</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PROJECTS ══════════════════════ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">What You'll Build</span>
+        <h2 class="section-title">Not Assignments.<br/><span class="title-highlight">Real Products.</span></h2>
+        <p class="section-desc">Every project ships to a live URL and goes into your portfolio. Companies see this — not your GPA.</p>
+      </div>
+
+      <div class="projects-filter" data-reveal>
+        <button class="pf-btn active" data-filter="all">All Projects</button>
+        <button class="pf-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="pf-btn" data-filter="api">APIs</button>
+        <button class="pf-btn" data-filter="ai">AI-Powered</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ TERMINAL / PRACTICE ══════════════════════ -->
+  <section class="terminal-section" id="practice">
+    <div class="container">
+      <div class="terminal-layout">
+        <div class="terminal-copy" data-reveal>
+          <span class="section-label">Try It Now</span>
+          <h2 class="section-title">Write Code.<br/><span class="title-highlight">Right Here.</span></h2>
+          <p class="terminal-desc">Every lesson ends with a coding challenge. Our in-browser editor runs your code instantly — no setup needed.</p>
+          <ul class="terminal-features">
+            <li>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Auto-graded challenges
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Instant feedback
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              XP earned on every run
+            </li>
+            <li>
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="#FF6B35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Peer code reviews
+            </li>
+          </ul>
+          <div class="challenge-tabs">
+            <button class="ctab active" data-challenge="0">Challenge 1</button>
+            <button class="ctab" data-challenge="1">Challenge 2</button>
+            <button class="ctab" data-challenge="2">Challenge 3</button>
+          </div>
+        </div>
+        <div class="terminal-ide" data-reveal>
+          <div class="ide-bar">
+            <span class="term-dot term-r"></span>
+            <span class="term-dot term-y"></span>
+            <span class="term-dot term-g"></span>
+            <span class="ide-tabs">
+              <span class="ide-tab active" id="ideTabName">challenge.js</span>
+            </span>
+          </div>
+          <div class="ide-editor-area">
+            <div class="ide-gutter" id="ideGutter"></div>
+            <textarea class="ide-code" id="ideCode" spellcheck="false"></textarea>
+          </div>
+          <div class="ide-output-area">
+            <div class="ide-output-bar">
+              <span>Output</span>
+              <div class="ide-actions">
+                <button class="ide-run" id="ideRun" type="button">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M5 3l9 5-9 5V3z" fill="currentColor"/></svg>
+                  Run
+                </button>
+                <button class="ide-reset" id="ideReset" type="button" title="Reset code">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M4 8a6 6 0 106 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M4 5v3H7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="ide-result" id="ideResult">
+              <span class="result-placeholder">// Click "Run" to execute your code</span>
+            </div>
+          </div>
+          <div class="ide-challenge-desc" id="ideChallengeDesc"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ OUTCOMES ══════════════════════ -->
+  <section class="outcomes-section" id="outcomes">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">After 90 Days</span>
+        <h2 class="section-title">You Won't Just Know Code.<br/><span class="title-highlight">You'll Have a Career.</span></h2>
+      </div>
+
+      <div class="outcomes-grid">
+        <div class="outcome-panel" data-reveal>
+          <h3 class="op-title">Skills You'll Master</h3>
+          <div class="skills-list" id="skillsList"></div>
+        </div>
+        <div class="outcome-panel" data-reveal>
+          <h3 class="op-title">Roles You Can Target</h3>
+          <div class="roles-grid" id="rolesGrid"></div>
+        </div>
+        <div class="outcome-panel" data-reveal>
+          <h3 class="op-title">Salary Range (Nepal/Remote)</h3>
+          <div class="salary-chart" id="salaryChart"></div>
+        </div>
+      </div>
+
+      <div class="outcomes-stats" data-reveal>
+        <div class="ostat">
+          <span class="ostat-num" data-count="91">0</span><span class="ostat-sym">%</span>
+          <span class="ostat-label">Placement Rate</span>
+        </div>
+        <div class="ostat-divider"></div>
+        <div class="ostat">
+          <span class="ostat-num" data-count="240">0</span><span class="ostat-sym">+</span>
+          <span class="ostat-label">Graduates Hired</span>
+        </div>
+        <div class="ostat-divider"></div>
+        <div class="ostat">
+          <span class="ostat-num" data-count="8">0</span><span class="ostat-sym">.2</span>
+          <span class="ostat-label">Avg LPA (First Job)</span>
+        </div>
+        <div class="ostat-divider"></div>
+        <div class="ostat">
+          <span class="ostat-num" data-count="90">0</span><span class="ostat-sym">d</span>
+          <span class="ostat-label">To Job-Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+  <section class="testi-section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Alumni Stories</span>
+        <h2 class="section-title">Hear From People<br/><span class="title-highlight">Exactly Like You.</span></h2>
+      </div>
+
+      <div class="testi-carousel">
+        <div class="testi-track" id="testiTrack"></div>
+      </div>
+      <div class="testi-controls">
+        <button class="tc-btn" id="testiPrev" aria-label="Previous testimonial">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="tc-btn" id="testiNext" aria-label="Next testimonial">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CTA ══════════════════════ -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-inner" data-reveal>
+        <h2 class="cta-title">
+          Ready to Stop Waiting<br/>and Start <span class="title-highlight">Building?</span>
+        </h2>
+        <p class="cta-desc">Join 500+ developers who chose to outlearn their peers. No prior experience needed — just the drive to change your trajectory.</p>
+
+        <form class="cta-form" id="ctaForm" novalidate>
+          <div class="cta-form-row">
+            <input type="text" class="cta-input" id="ctaName" placeholder="Your name" required />
+            <input type="email" class="cta-input" id="ctaEmail" placeholder="Email address" required />
+          </div>
+          <select class="cta-input cta-select" id="ctaLevel" required>
+            <option value="" disabled selected>Select your current level</option>
+            <option value="zero">Complete beginner (Hello World level)</option>
+            <option value="basic">Know some HTML/CSS/JS</option>
+            <option value="mid">Can build basic apps, want structure</option>
+            <option value="college">Final year — need a job ASAP</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-xl" id="ctaSubmit">
+            <span id="ctaBtnText">Start My Journey</span>
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">No spam. No pressure. We'll reach out within 24 hours.</p>
+        </form>
+
+        <div class="cta-success" id="ctaSuccess">
+          <div class="success-icon">✓</div>
+          <h3>You're In!</h3>
+          <p>Check your email — we'll send your details and next steps shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="CodeYatra" class="footer-logo-img" />
+          <p>Building Nepal's next generation of full-stack engineers — one project at a time.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M18.24 2h-2.68l-4.1 5.67L7.12 2H1.5l6.36 9.03L1.76 18h2.68l4.44-6.14L13.32 18H19l-6.64-9.44L18.24 2zm-2.77 14.4l-9.5-13.4h1.56l9.5 13.4h-1.56z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub" class="social-link">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 .5a9.5 9.5 0 00-3 18.52c.47.09.65-.2.65-.46V16.6c-2.64.57-3.2-1.27-3.2-1.27-.43-1.1-1.05-1.4-1.05-1.4-.86-.59.07-.58.07-.58.95.07 1.45.98 1.45.98.84 1.44 2.21 1.02 2.75.78.08-.6.33-1.02.6-1.26-2.1-.24-4.31-1.05-4.31-4.68 0-1.03.37-1.88.97-2.54-.1-.24-.42-1.2.09-2.5 0 0 .8-.26 2.6.97a9 9 0 014.74 0c1.8-1.23 2.6-.97 2.6-.97.51 1.3.19 2.26.09 2.5.6.66.97 1.51.97 2.54 0 3.64-2.22 4.44-4.33 4.67.34.3.64.88.64 1.77v2.63c0 .26.17.56.65.46A9.5 9.5 0 0010 .5z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M17.04 17.04h-2.96v-4.64c0-1.1-.02-2.53-1.54-2.53-1.54 0-1.78 1.2-1.78 2.44v4.73H7.8V7.5h2.84v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.02 0 3.57 1.99 3.57 4.57v5.21zM4.45 6.2a1.72 1.72 0 110-3.44 1.72 1.72 0 010 3.44zm1.48 10.84H2.96V7.5h2.97v9.54z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Program</h4>
+            <a href="#roadmap">Curriculum</a>
+            <a href="#projects">Projects</a>
+            <a href="#practice">Practice</a>
+            <a href="#outcomes">Outcomes</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CodeYatra. Made in Nepal. Your degree doesn't define you.</p>
+        <div class="footer-tech">
+          <span>MERN</span><span>TypeScript</span><span>Career-Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/roadmap.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
